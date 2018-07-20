@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +18,19 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/vendors/jquery.mobile-1.4.5.min.css">
 
-
+  <style>
+    #fb-root > div.fb_dialog.fb_dialog_advanced.fb_shrink_active {
+      right: initial !important;
+      left: 18pt;
+      z-index: 9999999 !important;
+    }
+    .fb-customerchat.fb_invisible_flow.fb_iframe_widget iframe {
+      right: initial !important;
+      left: 18pt !important;
+    }
+  </style>
 </head>
+
 <body class="container-fluid">
   <!-- For xl screen -->
   <header class="container d-none d-xl-block">
@@ -26,12 +38,14 @@
       <div class="row">
 
         <div class="col-md-3 col-sm-12">
-            <div class="header-left">
-              <a class="navbar-brand" href="#">
-                <img src="img/logo_gumiho_long(op2)_pink.png" alt="logo_gumiho">
-              </a>
-            </div> <!-- ./end header-left-->
-        </div> <!-- ./end col 3 12 -->
+          <div class="header-left">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo_gumiho_long(op2)_pink.png" alt="logo_gumiho">
+            </a>
+          </div>
+          <!-- ./end header-left-->
+        </div>
+        <!-- ./end col 3 12 -->
 
         <div class="col-md-9 col-sm-12">
 
@@ -39,34 +53,51 @@
             <div class="row">
               <div class="col-md-6 header-welcomeMsg">
                 Chào mừng quý khách đến với Gumiho Shop!
-              </div> <!-- ./end header-welcomeMsg -->
+              </div>
+              <!-- ./end header-welcomeMsg -->
 
               <div class="col-md-6 header-contact">
-                <span class="header-contact--call"><i class="fas fa-phone fa-flip-horizontal"></i> LIÊN HỆ - </span>
+                <span class="header-contact--call">
+                  <i class="fas fa-phone fa-flip-horizontal"></i> LIÊN HỆ - </span>
                 <span class="header-contact--call-num">091 525 4226 / 088 694 8832</span>
-              </div> <!-- ./end header-contact -->
-            </div> <!-- ./end row -->
+              </div>
+              <!-- ./end header-contact -->
+            </div>
+            <!-- ./end row -->
 
             <div class="row">
               <div class="col-sm-12 header-search">
                 <form class="header-search--form form-inline my-2 my-lg-0">
                   <input class="form-control" type="text" placeholder="Nhập từ khóa tìm kiếm">
-                  <button class="btn-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                  <button class="btn-success my-2 my-sm-0" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
                 </form>
 
                 <div class="header-account">
                   <ul class="header-account--ul">
-                    <li><a href="" title="Đăng ký">Đăng ký</a></li>
+                    <li>
+                      <a href="" title="Đăng ký">Đăng ký</a>
+                    </li>
                     <hr>
-                    <li><a href="" title="Đăng nhập">Đăng nhập</a></li>
-                  </ul> <!-- ./end header-account--ul -->
-                </div> <!-- ./end header-account -->
-              </div> <!-- ./end header-search -->
-            </div> <!-- ./end row -->
-          </div> <!-- ./end header-right -->
+                    <li>
+                      <a href="" title="Đăng nhập">Đăng nhập</a>
+                    </li>
+                  </ul>
+                  <!-- ./end header-account--ul -->
+                </div>
+                <!-- ./end header-account -->
+              </div>
+              <!-- ./end header-search -->
+            </div>
+            <!-- ./end row -->
+          </div>
+          <!-- ./end header-right -->
 
-        </div>  <!-- ./end col 9 12-->
-      </div> <!-- ./end row -->
+        </div>
+        <!-- ./end col 9 12-->
+      </div>
+      <!-- ./end row -->
 
     </div>
   </header>
@@ -77,12 +108,14 @@
       <div class="row">
 
         <div class="col-md-3 col-sm-12">
-            <div class="header-left">
-              <a class="navbar-brand" href="#">
-                <img src="img/logo_gumiho_long(op2)_pink.png" alt="logo_gumiho">
-              </a>
-            </div> <!-- ./end header-left -->
-        </div> <!-- ./end col 3 12 -->
+          <div class="header-left">
+            <a class="navbar-brand" href="#">
+              <img src="img/logo_gumiho_long(op2)_pink.png" alt="logo_gumiho">
+            </a>
+          </div>
+          <!-- ./end header-left -->
+        </div>
+        <!-- ./end col 3 12 -->
 
         <div class="col-md-9 col-sm-12">
 
@@ -90,34 +123,51 @@
             <div class="row">
               <div class="col-md-6 header-welcomeMsg">
                 Chào mừng quý khách đến với Gumiho Shop!
-              </div> <!-- ./end header-welcomeMsg -->
+              </div>
+              <!-- ./end header-welcomeMsg -->
 
               <div class="col-md-6 header-contact">
-                <span class="header-contact--call"><i class="fas fa-phone fa-flip-horizontal"></i> LIÊN HỆ - </span>
+                <span class="header-contact--call">
+                  <i class="fas fa-phone fa-flip-horizontal"></i> LIÊN HỆ - </span>
                 <span class="header-contact--call-num">091 525 4226 / 088 694 8832</span>
-              </div> <!-- ./end header-contact -->
-            </div> <!-- ./end row -->
+              </div>
+              <!-- ./end header-contact -->
+            </div>
+            <!-- ./end row -->
 
             <div class="row">
               <div class="col-sm-12 header-search">
                 <form class="header-search--form form-inline my-2 my-lg-0">
                   <input class="form-control" type="text" placeholder="Nhập từ khóa tìm kiếm">
-                  <button class="btn-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                  <button class="btn-success my-2 my-sm-0" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
                 </form>
 
                 <div class="header-account">
                   <ul class="header-account--ul">
-                    <li><a href="" title="Đăng ký">Đăng ký</a></li>
+                    <li>
+                      <a href="" title="Đăng ký">Đăng ký</a>
+                    </li>
                     <hr>
-                    <li><a href="" title="Đăng nhập">Đăng nhập</a></li>
-                  </ul> <!-- ./end header-account--ul -->
-                </div> <!-- ./end header-account -->
-              </div> <!-- ./end header-search -->
-            </div> <!-- ./end row -->
-          </div> <!-- ./end header-right -->
+                    <li>
+                      <a href="" title="Đăng nhập">Đăng nhập</a>
+                    </li>
+                  </ul>
+                  <!-- ./end header-account--ul -->
+                </div>
+                <!-- ./end header-account -->
+              </div>
+              <!-- ./end header-search -->
+            </div>
+            <!-- ./end row -->
+          </div>
+          <!-- ./end header-right -->
 
-        </div>  <!-- ./end col 9 12-->
-      </div> <!-- ./end row -->
+        </div>
+        <!-- ./end col 9 12-->
+      </div>
+      <!-- ./end row -->
 
     </div>
   </header>
@@ -130,17 +180,21 @@
 
           <div class="col-md-3 navbar-title">
             <a href="#">Danh mục sản phẩm</a>
-          </div> <!-- ./end col 3 -->
+          </div>
+          <!-- ./end col 3 -->
 
           <div class="col-md-9 navbar-list">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="collapsibleNavId">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">Trang chủ
+                    <span class="sr-only">(current)</span>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Hàng mới về</a>
@@ -151,45 +205,70 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Beauty tips/review</a>
                 </li>
-              </ul> <!-- ./end navbar-nav -->
+              </ul>
+              <!-- ./end navbar-nav -->
               <div class="navbar-cart">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i><span>(2)</span> Giỏ hàng</a>
+                <a class="nav-link" href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>(2)</span> Giỏ hàng</a>
                 <ul class="navbar-cart--ul">
                   <div class="row navbar-cart--product">
                     <div class="col-sm-4">
                       <img class="navbar-cart--product-img img-fluid img-thumbnail" src="img/product/1.jpg" alt="">
-                    </div> <!-- ./end col 4 -->
+                    </div>
+                    <!-- ./end col 4 -->
 
                     <div class="col-sm-8">
-                      <h6 class="navbar-cart--product-name"><a href="">Mặt nạ Naruko trảm trà</a></h6>
+                      <h6 class="navbar-cart--product-name">
+                        <a href="">Mặt nạ Naruko trảm trà</a>
+                      </h6>
                       <p class="navbar-cart--product-quantity">Số lượng: 1</p>
                       <p class="navbar-cart--product-price">Giá: 100.000đ</p>
-                    </div> <!-- ./end col 8 -->
-                  </div> <!-- ./end navbar-cart--product -->
+                    </div>
+                    <!-- ./end col 8 -->
+                  </div>
+                  <!-- ./end navbar-cart--product -->
 
                   <div class="row navbar-cart--product">
                     <div class="col-sm-4">
                       <img class="navbar-cart--product-img img-fluid img-thumbnail" src="img/product/2.jpg" alt="">
-                    </div> <!-- ./end col 4 -->
+                    </div>
+                    <!-- ./end col 4 -->
 
                     <div class="col-sm-8">
-                      <h6 class="navbar-cart--product-name"><a href="">Mặt nạ Naruko trảm trà</a></h6>
+                      <h6 class="navbar-cart--product-name">
+                        <a href="">Mặt nạ Naruko trảm trà</a>
+                      </h6>
                       <p class="navbar-cart--product-quantity">Số lượng: 1</p>
                       <p class="navbar-cart--product-price">Giá: 100.000đ</p>
-                    </div> <!-- ./end col 8 -->
-                  </div> <!-- ./end navbar-cart--product -->
+                    </div>
+                    <!-- ./end col 8 -->
+                  </div>
+                  <!-- ./end navbar-cart--product -->
                   <hr>
                   <div class="navbar-cart--button">
-                    <li class="navbar-cart--btn-border"><a href="">Xem giỏ hàng</a></li>
-                    <li class="navbar-cart--btn-soild"><a href="">Thanh toán</a></li>
-                  </div> <!-- ./end navbar-cart--button -->
-                </ul> <!-- ./end navbar-cart--ul -->
-              </div> <!-- ./end navbar-cart -->
-            </div> <!-- ./end navbar-collapse -->
-          </div><!-- ./end col 9 -->
-        </div> <!-- ./end row -->
-      </div> <!-- ./end navbar -->
-    </div> <!-- ./end container -->
+                    <li class="navbar-cart--btn-border">
+                      <a href="">Xem giỏ hàng</a>
+                    </li>
+                    <li class="navbar-cart--btn-soild">
+                      <a href="">Thanh toán</a>
+                    </li>
+                  </div>
+                  <!-- ./end navbar-cart--button -->
+                </ul>
+                <!-- ./end navbar-cart--ul -->
+              </div>
+              <!-- ./end navbar-cart -->
+            </div>
+            <!-- ./end navbar-collapse -->
+          </div>
+          <!-- ./end col 9 -->
+        </div>
+        <!-- ./end row -->
+      </div>
+      <!-- ./end navbar -->
+    </div>
+    <!-- ./end container -->
 
     <!-- For lg screen -->
     <div class="container-fluid d-none d-lg-block d-xl-none">
@@ -202,14 +281,17 @@
           <!-- ./end col 3 -->
 
           <div class="col-md-9 navbar-list">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+              aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="collapsibleNavId">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">Trang chủ
+                    <span class="sr-only">(current)</span>
+                  </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Hàng mới về</a>
@@ -224,7 +306,9 @@
               <!-- ./end navbar-nav -->
 
               <div class="navbar-cart">
-                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i><span>(2)</span> Giỏ hàng</a>
+                <a class="nav-link" href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>(2)</span> Giỏ hàng</a>
                 <ul class="navbar-cart--ul">
                   <div class="row navbar-cart--product">
 
@@ -234,7 +318,9 @@
                     <!-- ./end col 4 -->
 
                     <div class="col-sm-8">
-                      <h6 class="navbar-cart--product-name"><a href="">Mặt nạ Naruko trảm trà</a></h6>
+                      <h6 class="navbar-cart--product-name">
+                        <a href="">Mặt nạ Naruko trảm trà</a>
+                      </h6>
                       <p class="navbar-cart--product-quantity">Số lượng: 1</p>
                       <p class="navbar-cart--product-price">Giá: 100.000đ</p>
                     </div>
@@ -251,7 +337,9 @@
                     <!-- ./end col 4 -->
 
                     <div class="col-sm-8">
-                      <h6 class="navbar-cart--product-name"><a href="">Mặt nạ Naruko trảm trà</a></h6>
+                      <h6 class="navbar-cart--product-name">
+                        <a href="">Mặt nạ Naruko trảm trà</a>
+                      </h6>
                       <p class="navbar-cart--product-quantity">Số lượng: 1</p>
                       <p class="navbar-cart--product-price">Giá: 100.000đ</p>
                     </div>
@@ -263,8 +351,12 @@
                   <hr>
 
                   <div class="navbar-cart--button">
-                    <li class="navbar-cart--btn-border"><a href="">Xem giỏ hàng</a></li>
-                    <li class="navbar-cart--btn-soild"><a href="">Thanh toán</a></li>
+                    <li class="navbar-cart--btn-border">
+                      <a href="">Xem giỏ hàng</a>
+                    </li>
+                    <li class="navbar-cart--btn-soild">
+                      <a href="">Thanh toán</a>
+                    </li>
                   </div>
                   <!-- ./end navbar-cart--button -->
 
@@ -275,7 +367,7 @@
               <!-- ./end navbar-cart -->
 
             </div>
-             <!-- ./end navbar-collapse -->
+            <!-- ./end navbar-collapse -->
 
           </div>
           <!-- ./end col 9 -->
@@ -299,22 +391,22 @@
 
             <div class="list-group">
               <a href="#" class="list-group-item list-group-item-action aside__menu--item">
-                <img src="img/icon-cosmetic/mask.svg" alt="mask" > mặt nạ - mask
+                <img src="img/icon-cosmetic/mask.svg" alt="mask"> mặt nạ - mask
               </a>
               <a href="#" class="list-group-item list-group-item-action aside__menu--item">
-                <img src="img/icon-cosmetic/skincare.svg" alt="skincare" > chăm sóc da - skincare
+                <img src="img/icon-cosmetic/skincare.svg" alt="skincare"> chăm sóc da - skincare
               </a>
               <a href="#" class="list-group-item list-group-item-action aside__menu--item">
-                <img src="img/icon-cosmetic/skincare_xit.svg" alt="body" > chăm sóc cơ thể - body
+                <img src="img/icon-cosmetic/skincare_xit.svg" alt="body"> chăm sóc cơ thể - body
               </a>
               <a href="#" class="list-group-item list-group-item-action aside__menu--item">
-                <img src="img/icon-cosmetic/bath&body.svg" alt="hair" > chăm sóc tóc - hair
+                <img src="img/icon-cosmetic/bath&body.svg" alt="hair"> chăm sóc tóc - hair
               </a>
               <a href="#" class="list-group-item list-group-item-action aside__menu--item">
-                <img src="img/icon-cosmetic/milk-washing-face.svg" alt="face" > sữa rửa mặt - cleanser
+                <img src="img/icon-cosmetic/milk-washing-face.svg" alt="face"> sữa rửa mặt - cleanser
               </a>
               <a href="#" class="list-group-item list-group-item-action aside__menu--item">
-                <img src="img/icon-cosmetic/other-product.svg" alt="other-product" > sản phẩm khác - others
+                <img src="img/icon-cosmetic/other-product.svg" alt="other-product"> sản phẩm khác - others
               </a>
             </div>
 
@@ -369,588 +461,769 @@
         <!-- Carousel Wrapper -->
         <div id="product__new--multi-item" class="carousel slide carousel-multi-item" data-pause="true">
 
-            <!-- Controls -->
-            <div class="controls-top">
+          <!-- Controls -->
+          <div class="controls-top">
 
-              <div class="product__new--title">
-                <h2><i class="fas fa-tags tag-icon"></i>sản phẩm mới</h2>
-              </div>
-
-              <div class="controls-top__button">
-                <a class="btn-floating" href="#product__new--multi-item" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                <a class="btn-floating" href="#product__new--multi-item" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-              </div>
-
+            <div class="product__new--title">
+              <h2>
+                <i class="fas fa-tags tag-icon"></i>sản phẩm mới</h2>
             </div>
-            <!-- /.Controls -->
+
+            <div class="controls-top__button">
+              <a class="btn-floating" href="#product__new--multi-item" data-slide="prev">
+                <i class="fa fa-chevron-left"></i>
+              </a>
+              <a class="btn-floating" href="#product__new--multi-item" data-slide="next">
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </div>
+
+          </div>
+          <!-- /.Controls -->
 
           <div class="card">
             <!-- Slides -->
             <div class="carousel-inner" role="listbox">
 
-                <!-- First slide -->
-                <div class="carousel-item active">
-                  <div class="row">
+              <!-- First slide -->
+              <div class="carousel-item active">
+                <div class="row">
 
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/1.jpg" alt="Card image cap"></a>
+                  <div class="col-md-3">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/1.jpg" alt="Card image cap">
+                        </a>
 
-                            <div class="product__img--action">
+                        <div class="product__img--action">
 
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> Thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> Thêm vào giỏ</a>
                           </div>
-                          <!-- /.product__img -->
 
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Mặt nạ tràm trà kiểm soát dầu và mụn hộp 8 miếng </a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
                           </div>
-                          <!-- /.product__img--detail -->
+
                         </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
+                        <!-- /.product__img--action -->
 
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/2.jpg" alt="Card image cap"></a>
+                      </div>
+                      <!-- /.product__img -->
 
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> Thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Mặt nạ tràm trà kiểm soát dầu và mụn hộp 8 miếng </a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
                         </div>
-                        <!-- /.card mb-2 -->
+                      </div>
+                      <!-- /.product__img--detail -->
                     </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/3.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> Thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Mặt Nạ Ngủ Naruko Tea Tree Shine Control & Blemish Clear Night Gelly 80g</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/4.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Serum trị mụn, trị thâm Naruko: Tea Tree Post Blemish Corrector 10ml</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
+                    <!-- /.card mb-2 -->
                   </div>
-                  <!-- /.row -->
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/2.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> Thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/3.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> Thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Mặt Nạ Ngủ Naruko Tea Tree Shine Control & Blemish Clear Night Gelly 80g</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/4.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Serum trị mụn, trị thâm Naruko: Tea Tree Post Blemish Corrector 10ml</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
 
                 </div>
-                <!-- /.First slide -->
+                <!-- /.row -->
 
-                <!-- Second slide -->
-                <div class="carousel-item">
-                  <div class="row">
+              </div>
+              <!-- /.First slide -->
 
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/5.jpg" alt="Card image cap"></a>
+              <!-- Second slide -->
+              <div class="carousel-item">
+                <div class="row">
 
-                            <div class="product__img--action">
+                  <div class="col-md-3">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/5.jpg" alt="Card image cap">
+                        </a>
 
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
+                        <div class="product__img--action">
 
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
                           </div>
-                          <!-- /.product__img -->
 
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
                           </div>
-                          <!-- /.product__img--detail -->
+
                         </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
 
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/6.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
                         </div>
-                        <!-- /.card mb-2 -->
+                      </div>
+                      <!-- /.product__img--detail -->
                     </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/7.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/8.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
+                    <!-- /.card mb-2 -->
                   </div>
-                  <!-- /.row -->
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/6.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/7.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/8.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
 
                 </div>
-                <!-- /.Second slide -->
+                <!-- /.row -->
 
-                <!-- Third slide -->
-                <div class="carousel-item">
-                  <div class="row">
+              </div>
+              <!-- /.Second slide -->
 
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/9.jpg" alt="Card image cap"></a>
+              <!-- Third slide -->
+              <div class="carousel-item">
+                <div class="row">
 
-                            <div class="product__img--action">
+                  <div class="col-md-3">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/9.jpg" alt="Card image cap">
+                        </a>
 
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
+                        <div class="product__img--action">
 
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
                           </div>
-                          <!-- /.product__img -->
 
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
                           </div>
-                          <!-- /.product__img--detail -->
+
                         </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
 
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/10.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
                         </div>
-                        <!-- /.card mb-2 -->
+                      </div>
+                      <!-- /.product__img--detail -->
                     </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/11.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/12.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
+                    <!-- /.card mb-2 -->
                   </div>
-                  <!-- /.row -->
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/10.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/12.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
 
                 </div>
-                <!-- /.Third slide -->
+                <!-- /.row -->
 
-                <!-- Fourth slide -->
-                <div class="carousel-item">
-                  <div class="row">
+              </div>
+              <!-- /.Third slide -->
 
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/13.jpg" alt="Card image cap"></a>
+              <!-- Fourth slide -->
+              <div class="carousel-item">
+                <div class="row">
 
-                            <div class="product__img--action">
+                  <div class="col-md-3">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/13.jpg" alt="Card image cap">
+                        </a>
 
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
+                        <div class="product__img--action">
 
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
                           </div>
-                          <!-- /.product__img -->
 
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
                           </div>
-                          <!-- /.product__img--detail -->
+
                         </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
 
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/14.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
                         </div>
-                        <!-- /.card mb-2 -->
+                      </div>
+                      <!-- /.product__img--detail -->
                     </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/15.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/16.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
+                    <!-- /.card mb-2 -->
                   </div>
-                  <!-- /.row -->
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/14.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/15.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/16.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
 
                 </div>
-                <!-- /.Fourth slide -->
+                <!-- /.row -->
+
+              </div>
+              <!-- /.Fourth slide -->
 
             </div>
             <!-- /.Slides -->
 
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#product__new--multi-item" data-slide-to="0" class="active"></li>
-                <li data-target="#product__new--multi-item" data-slide-to="1"></li>
-                <li data-target="#product__new--multi-item" data-slide-to="2"></li>
-                <li data-target="#product__new--multi-item" data-slide-to="3"></li>
+              <li data-target="#product__new--multi-item" data-slide-to="0" class="active"></li>
+              <li data-target="#product__new--multi-item" data-slide-to="1"></li>
+              <li data-target="#product__new--multi-item" data-slide-to="2"></li>
+              <li data-target="#product__new--multi-item" data-slide-to="3"></li>
             </ol>
             <!-- /.Indicators -->
           </div>
@@ -988,7 +1261,8 @@
               <div class="routine__box--text">
                 <h2>skincare routine</h2>
                 <hr>
-                <p>Routine Cơ Bản cho chính mình là điều không hề đơn giản. Để Routine đó hoạt động, đưa làn da mình khá hơn lại càng không đơn giản. Cùng check qua nhé!</p>
+                <p>Routine Cơ Bản cho chính mình là điều không hề đơn giản. Để Routine đó hoạt động, đưa làn da mình khá hơn
+                  lại càng không đơn giản. Cùng check qua nhé!</p>
               </div>
             </div>
 
@@ -1008,586 +1282,767 @@
         <!-- Carousel Wrapper -->
         <div id="product__hot--multi-item" class="carousel slide carousel-multi-item" data-pause="true">
 
-            <!-- Controls -->
-            <div class="controls-top">
+          <!-- Controls -->
+          <div class="controls-top">
 
-              <div class="product__hot--title">
-                <h2><i class="fas fa-tags tag-icon"></i>sản phẩm được yêu thích</h2>
-              </div>
-
-              <div class="controls-top__button">
-                <a class="btn-floating" href="#product__hot--multi-item" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                <a class="btn-floating" href="#product__hot--multi-item" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-              </div>
-
+            <div class="product__hot--title">
+              <h2>
+                <i class="fas fa-tags tag-icon"></i>sản phẩm được yêu thích</h2>
             </div>
-            <!-- /.Controls -->
+
+            <div class="controls-top__button">
+              <a class="btn-floating" href="#product__hot--multi-item" data-slide="prev">
+                <i class="fa fa-chevron-left"></i>
+              </a>
+              <a class="btn-floating" href="#product__hot--multi-item" data-slide="next">
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </div>
+
+          </div>
+          <!-- /.Controls -->
 
           <div class="card">
             <!-- Slides -->
             <div class="carousel-inner" role="listbox">
 
-                <!-- First slide -->
-                <div class="carousel-item">
-                  <div class="row">
+              <!-- First slide -->
+              <div class="carousel-item">
+                <div class="row">
 
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/1.jpg" alt="Card image cap"></a>
+                  <div class="col-md-3">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/1.jpg" alt="Card image cap">
+                        </a>
 
-                            <div class="product__img--action">
+                        <div class="product__img--action">
 
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
                           </div>
-                          <!-- /.product__img -->
 
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Mặt nạ tràm trà kiểm soát dầu và mụn hộp 8 miếng </a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
                           </div>
-                          <!-- /.product__img--detail -->
+
                         </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
 
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/2.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Mặt nạ tràm trà kiểm soát dầu và mụn hộp 8 miếng </a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
                         </div>
-                        <!-- /.card mb-2 -->
+                      </div>
+                      <!-- /.product__img--detail -->
                     </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/3.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Mặt Nạ Ngủ Naruko Tea Tree Shine Control & Blemish Clear Night Gelly 80g</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/4.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Serum trị mụn, trị thâm Naruko: Tea Tree Post Blemish Corrector 10ml</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
+                    <!-- /.card mb-2 -->
                   </div>
-                  <!-- /.row -->
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/2.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/3.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Mặt Nạ Ngủ Naruko Tea Tree Shine Control & Blemish Clear Night Gelly 80g</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/4.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Serum trị mụn, trị thâm Naruko: Tea Tree Post Blemish Corrector 10ml</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
 
                 </div>
-                <!-- /.First slide -->
+                <!-- /.row -->
 
-                <!-- Second slide -->
-                <div class="carousel-item">
-                  <div class="row">
+              </div>
+              <!-- /.First slide -->
 
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/5.jpg" alt="Card image cap"></a>
+              <!-- Second slide -->
+              <div class="carousel-item">
+                <div class="row">
 
-                            <div class="product__img--action">
+                  <div class="col-md-3">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/5.jpg" alt="Card image cap">
+                        </a>
 
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
+                        <div class="product__img--action">
 
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
                           </div>
-                          <!-- /.product__img -->
 
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
                           </div>
-                          <!-- /.product__img--detail -->
+
                         </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
 
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/6.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
                         </div>
-                        <!-- /.card mb-2 -->
+                      </div>
+                      <!-- /.product__img--detail -->
                     </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/7.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/8.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
+                    <!-- /.card mb-2 -->
                   </div>
-                  <!-- /.row -->
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/6.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/7.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/8.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
 
                 </div>
-                <!-- /.Second slide -->
+                <!-- /.row -->
 
-                <!-- Third slide -->
-                <div class="carousel-item active">
-                  <div class="row">
+              </div>
+              <!-- /.Second slide -->
 
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/9.jpg" alt="Card image cap"></a>
+              <!-- Third slide -->
+              <div class="carousel-item active">
+                <div class="row">
 
-                            <div class="product__img--action">
+                  <div class="col-md-3">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/9.jpg" alt="Card image cap">
+                        </a>
 
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
+                        <div class="product__img--action">
 
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
                           </div>
-                          <!-- /.product__img -->
 
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
                           </div>
-                          <!-- /.product__img--detail -->
+
                         </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
 
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/10.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
                         </div>
-                        <!-- /.card mb-2 -->
+                      </div>
+                      <!-- /.product__img--detail -->
                     </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/11.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/12.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
+                    <!-- /.card mb-2 -->
                   </div>
-                  <!-- /.row -->
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/10.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/12.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
 
                 </div>
-                <!-- /.Third slide -->
+                <!-- /.row -->
 
-                <!-- Fourth slide -->
-                <div class="carousel-item">
-                  <div class="row">
+              </div>
+              <!-- /.Third slide -->
 
-                    <div class="col-md-3">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/13.jpg" alt="Card image cap"></a>
+              <!-- Fourth slide -->
+              <div class="carousel-item">
+                <div class="row">
 
-                            <div class="product__img--action">
+                  <div class="col-md-3">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/13.jpg" alt="Card image cap">
+                        </a>
 
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
+                        <div class="product__img--action">
 
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
                           </div>
-                          <!-- /.product__img -->
 
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
                           </div>
-                          <!-- /.product__img--detail -->
+
                         </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
 
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/14.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
                         </div>
-                        <!-- /.card mb-2 -->
+                      </div>
+                      <!-- /.product__img--detail -->
                     </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/15.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
-                    <div class="col-md-3 clearfix d-none d-md-block">
-                        <div class="card mb-2">
-                          <div class="product__img">
-                            <a href=""><img class="card-img-top" src="img/product/16.jpg" alt="Card image cap"></a>
-
-                            <div class="product__img--action">
-
-                              <div class="product__img--action-cart">
-                                <a href=""><span><i class="fas fa-shopping-cart"></i></span> thêm vào giỏ</a>
-                              </div>
-
-                              <div class="product__img--action-detail">
-                                <a href=""><span><i class="fas fa-list"></i></span> chi tiết</a>
-                              </div>
-
-                            </div>
-                            <!-- /.product__img--action -->
-                          </div>
-                          <!-- /.product__img -->
-
-                          <div class="product__img--details">
-                            <div class="card-body">
-                                <h4><a href="" class="card-title">Card title</a></h4>
-                                <p class="card-text"><span>125.000đ</span> 150.000đ</p>
-                            </div>
-                          </div>
-                          <!-- /.product__img--detail -->
-                        </div>
-                        <!-- /.card mb-2 -->
-                    </div>
-                    <!-- /.col 3 -->
-
+                    <!-- /.card mb-2 -->
                   </div>
-                  <!-- /.row -->
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/14.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/15.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
+
+                  <div class="col-md-3 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                      <div class="product__img">
+                        <a href="">
+                          <img class="card-img-top" src="img/product/16.jpg" alt="Card image cap">
+                        </a>
+
+                        <div class="product__img--action">
+
+                          <div class="product__img--action-cart">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-shopping-cart"></i>
+                              </span> thêm vào giỏ</a>
+                          </div>
+
+                          <div class="product__img--action-detail">
+                            <a href="">
+                              <span>
+                                <i class="fas fa-list"></i>
+                              </span> chi tiết</a>
+                          </div>
+
+                        </div>
+                        <!-- /.product__img--action -->
+                      </div>
+                      <!-- /.product__img -->
+
+                      <div class="product__img--details">
+                        <div class="card-body">
+                          <h4>
+                            <a href="" class="card-title">Card title</a>
+                          </h4>
+                          <p class="card-text">
+                            <span>125.000đ</span> 150.000đ</p>
+                        </div>
+                      </div>
+                      <!-- /.product__img--detail -->
+                    </div>
+                    <!-- /.card mb-2 -->
+                  </div>
+                  <!-- /.col 3 -->
 
                 </div>
-                <!-- /.Fourth slide -->
+                <!-- /.row -->
+
+              </div>
+              <!-- /.Fourth slide -->
 
             </div>
             <!-- /.Slides -->
 
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#product__hot--multi-item" data-slide-to="0"></li>
-                <li data-target="#product__hot--multi-item" data-slide-to="1"></li>
-                <li data-target="#product__hot--multi-item" data-slide-to="2" class="active"></li>
-                <li data-target="#product__hot--multi-item" data-slide-to="3"></li>
+              <li data-target="#product__hot--multi-item" data-slide-to="0"></li>
+              <li data-target="#product__hot--multi-item" data-slide-to="1"></li>
+              <li data-target="#product__hot--multi-item" data-slide-to="2" class="active"></li>
+              <li data-target="#product__hot--multi-item" data-slide-to="3"></li>
             </ol>
             <!-- /.Indicators -->
           </div>
@@ -1604,7 +2059,8 @@
 
       <div class="container">
         <div class="blog--title">
-          <h2><i class="fas fa-tags tag-icon"></i>beauty tips/review</h2>
+          <h2>
+            <i class="fas fa-tags tag-icon"></i>beauty tips/review</h2>
         </div>
         <!-- /.blog--title -->
 
@@ -1625,10 +2081,17 @@
             <!-- /.blog__box--img -->
 
             <div class="blog__box--content">
-              <h3><a href="">Curabitur ornare massa nulla</a></h3>
+              <h3>
+                <a href="">Curabitur ornare massa nulla</a>
+              </h3>
               <p class="blog__box--content-time">June 21th, 2018</p>
-              <p class="blog__box--content-detail">Nulla suscipit elementum diam non ultricies. Donec nec sollicitudin dui. In sagittis fermentum semper. Sed iaculis erat eget magna scelerisque feugiat. Integer et pharetra tortor.</p>
-              <a href="" class="btn btn-outline-danger">Đọc tiếp <span><i class="fas fa-chevron-right"></i></span></a>
+              <p class="blog__box--content-detail">Nulla suscipit elementum diam non ultricies. Donec nec sollicitudin dui. In sagittis fermentum semper. Sed
+                iaculis erat eget magna scelerisque feugiat. Integer et pharetra tortor.</p>
+              <a href="" class="btn btn-outline-danger">Đọc tiếp
+                <span>
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
             </div>
             <!-- /.blog__box--content -->
           </div>
@@ -1637,10 +2100,17 @@
           <div class="col-md-4 blog__box blog__box--middle">
 
             <div class="blog__box--content">
-              <h3><a href="">Curabitur ornare massa nulla</a></h3>
+              <h3>
+                <a href="">Curabitur ornare massa nulla</a>
+              </h3>
               <p class="blog__box--content-time">June 21th, 2018</p>
-              <p class="blog__box--content-detail">Nulla suscipit elementum diam non ultricies. Donec nec sollicitudin dui. In sagittis fermentum semper. Sed iaculis erat eget magna scelerisque feugiat. Integer et pharetra tortor.</p>
-              <a href="" class="btn btn-outline-danger">Đọc tiếp <span><i class="fas fa-chevron-right"></i></span></a>
+              <p class="blog__box--content-detail">Nulla suscipit elementum diam non ultricies. Donec nec sollicitudin dui. In sagittis fermentum semper. Sed
+                iaculis erat eget magna scelerisque feugiat. Integer et pharetra tortor.</p>
+              <a href="" class="btn btn-outline-danger">Đọc tiếp
+                <span>
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
             </div>
             <!-- /.blog__box--content -->
 
@@ -1673,10 +2143,17 @@
             <!-- /.blog__box--img -->
 
             <div class="blog__box--content">
-              <h3><a href="">Curabitur ornare massa nulla</a></h3>
+              <h3>
+                <a href="">Curabitur ornare massa nulla</a>
+              </h3>
               <p class="blog__box--content-time">June 21th, 2018</p>
-              <p class="blog__box--content-detail">Nulla suscipit elementum diam non ultricies. Donec nec sollicitudin dui. In sagittis fermentum semper. Sed iaculis erat eget magna scelerisque feugiat. Integer et pharetra tortor.</p>
-              <a href="" class="btn btn-outline-danger">Đọc tiếp <span><i class="fas fa-chevron-right"></i></span></a>
+              <p class="blog__box--content-detail">Nulla suscipit elementum diam non ultricies. Donec nec sollicitudin dui. In sagittis fermentum semper. Sed
+                iaculis erat eget magna scelerisque feugiat. Integer et pharetra tortor.</p>
+              <a href="" class="btn btn-outline-danger">Đọc tiếp
+                <span>
+                  <i class="fas fa-chevron-right"></i>
+                </span>
+              </a>
             </div>
             <!-- /.blog__box--content -->
           </div>
@@ -1695,34 +2172,70 @@
     <div class="contact">
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <h4 class="contact__title"><a href=""><span><i class="far fa-user-circle"></i></span> hỗ trợ người mua</a></h4>
+          <h4 class="contact__title">
+            <a href="">
+              <span>
+                <i class="far fa-user-circle"></i>
+              </span> hỗ trợ người mua</a>
+          </h4>
           <ul class="contact__list">
-            <li><a href="">hướng dẫn mua hàng tại Gumiho Shop</a></li>
-            <li><a href="">tìm kiếm sản phẩm</a></li>
-            <li><a href="">Thông tin chuyển khoản</a></li>
+            <li>
+              <a href="">hướng dẫn mua hàng tại Gumiho Shop</a>
+            </li>
+            <li>
+              <a href="">tìm kiếm sản phẩm</a>
+            </li>
+            <li>
+              <a href="">Thông tin chuyển khoản</a>
+            </li>
           </ul>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <h4 class="contact__title"><a href=""><span><i class="fas fa-info-circle"></i></span> chương trình và chính sách</a></h4>
+          <h4 class="contact__title">
+            <a href="">
+              <span>
+                <i class="fas fa-info-circle"></i>
+              </span> chương trình và chính sách</a>
+          </h4>
           <ul class="contact__list">
-            <li><a href="">chính sách tích lũy điểm</a></li>
-            <li><a href="">chính sách vận chuyển</a></li>
-            <li><a href="">chính sách đổi trả</a></li>
+            <li>
+              <a href="">chính sách tích lũy điểm</a>
+            </li>
+            <li>
+              <a href="">chính sách vận chuyển</a>
+            </li>
+            <li>
+              <a href="">chính sách đổi trả</a>
+            </li>
           </ul>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <h4 class="contact__title"><a href=""><span><i class="far fa-file-alt"></i></span> cam kết sản phẩm</a></h4>
+          <h4 class="contact__title">
+            <a href="">
+              <span>
+                <i class="far fa-file-alt"></i>
+              </span> cam kết sản phẩm</a>
+          </h4>
           <ul class="contact__list">
-            <li><a href="">Sản phẩm chính hãng kèm bill</a></li>
+            <li>
+              <a href="">Sản phẩm chính hãng kèm bill</a>
+            </li>
           </ul>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <h4 class="contact__title"><a href=""><span><i class="fas fa-truck-moving fa-flip-horizontal"></i></span> ship & order</a></h4>
+          <h4 class="contact__title">
+            <a href="">
+              <span>
+                <i class="fas fa-truck-moving fa-flip-horizontal"></i>
+              </span> ship & order</a>
+          </h4>
           <ul class="contact__list">
-            <li><a href="">0912 518 349 - 088 694 8832</a></li>
+            <li>
+              <a href="">0912 518 349 - 088 694 8832</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -1739,19 +2252,32 @@
 
         <div class="col-md-6">
           <ul class="address__list">
-            <li class="address__item"><span><i class="fas fa-map-marker-alt"></i></span> Phòng 509CT7A, Khu đô thị The Spark, Đường Lê Văn Lương, Hà Nội.</li>
-            <li class="address__item"><span><i class="fas fa-phone fa-flip-horizontal"></i></span> 088 694 88 32</li>
-            <li class="address__item"><span><i class="far fa-envelope"></i></span> congchuanho_quynhdung@yahoo.com.vn</li>
+            <li class="address__item">
+              <span>
+                <i class="fas fa-map-marker-alt"></i>
+              </span> Phòng 509CT7A, Khu đô thị The Spark, Đường Lê Văn Lương, Hà Nội.</li>
+            <li class="address__item">
+              <span>
+                <i class="fas fa-phone fa-flip-horizontal"></i>
+              </span> 088 694 88 32</li>
+            <li class="address__item">
+              <span>
+                <i class="far fa-envelope"></i>
+              </span> congchuanho_quynhdung@yahoo.com.vn</li>
           </ul>
         </div>
 
         <div class="col-md-3 address__social">
           <div class="address__social--fb">
-            <a href="https://www.facebook.com/gumihoshop123/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/gumihoshop123/">
+              <i class="fab fa-facebook-f"></i>
+            </a>
           </div>
 
           <div class="address__social--shopee">
-            <a href="http://"><img src="img/icon-cosmetic/shopee.svg" alt=""></a>
+            <a href="http://">
+              <img src="img/icon-cosmetic/shopee.svg" alt="">
+            </a>
           </div>
 
         </div>
@@ -1764,11 +2290,32 @@
     <hr>
 
     <div class="copyright">
-      <p>&copy; Cung cấp bởi <a href="">Truyền Hồ.</a> - SĐT: 088 694 89 87</p>
+      <p>&copy; Cung cấp bởi
+        <a href="">Truyền Hồ.</a> - SĐT: 088 694 89 87</p>
     </div>
     <!-- /.copyright -->
   </footer>
 
+  <div class="fb-customerchat" page_id="684001665031333" minimized="true">
+  </div>
+
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId            : '912333495590130',
+        autoLogAppEvents : true,
+        xfbml            : true,
+        version          : 'v2.11'
+      });
+    };
+  (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <!-- Libraries JS -->
   <!-- JQuery -->
   <script src="js/vendors/jquery-3.3.1.min.js"></script>
@@ -1782,4 +2329,5 @@
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
